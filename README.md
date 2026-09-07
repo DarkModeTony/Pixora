@@ -92,11 +92,35 @@ ai-editor/
 │   ├── auth-context.tsx                  # User authentication React Context
 │   ├── insforge.ts                       # InsForge BaaS client initialization
 │   └── utils.ts                          # Class variance and styling helpers
+├── diagrams/                             # Python diagram generator & exported high-res PNGs
+│   ├── pixora_diagrams.py                # Standalone matplotlib visualizer script
+│   ├── pixora_architecture.png           # Multi-tier system architecture
+│   ├── pixora_ai_flow.png                # AI generation pipeline data flow
+│   ├── pixora_payment_flow.png           # Razorpay subscription & billing flow
+│   ├── pixora_er_diagram.png             # PostgreSQL entity relationship diagram
+│   ├── pixora_db_tables.png              # Database schema, triggers & RLS policies
+│   └── README.md                         # Detailed visual diagram guide
 ├── migrations/                           # SQL schema migrations for PostgreSQL
 ├── public/                               # Static assets, models, presets, test images
 ├── .env.example                          # Environment variables template
 └── README.md
 ```
+
+---
+
+## 📊 Architecture & Data Flow Diagrams
+
+Pixora includes 5 automated high-resolution architectural diagrams generated with Python (`matplotlib`):
+
+| Diagram | Focus Area | Direct Link |
+| :--- | :--- | :--- |
+| **Full System Architecture** | Multi-tier client, server, BaaS, AI engine & payment layers | [pixora_architecture.png](diagrams/pixora_architecture.png) |
+| **AI Generation Flow** | Presigned upload, async YouCam task polling & storage pipeline | [pixora_ai_flow.png](diagrams/pixora_ai_flow.png) |
+| **Payment & Subscription Flow** | Razorpay order, Checkout.js, HMAC-SHA256 & atomic credits | [pixora_payment_flow.png](diagrams/pixora_payment_flow.png) |
+| **Entity Relationship (ER) Diagram** | Full PostgreSQL relational schema across all 6 tables | [pixora_er_diagram.png](diagrams/pixora_er_diagram.png) |
+| **Database Tables Reference** | Complete column types, constraints, RLS policies & triggers | [pixora_db_tables.png](diagrams/pixora_db_tables.png) |
+
+> 💡 Explore [diagrams/README.md](diagrams/README.md) for comprehensive step-by-step walkthroughs of each diagram, or run `python diagrams/pixora_diagrams.py` to regenerate them.
 
 ---
 

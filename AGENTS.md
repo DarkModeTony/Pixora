@@ -146,5 +146,10 @@ Key patterns:
       - 3 Interactive Subscription Cards with distinct badges ("Popular Value", "Best for Creators"), feature checklists, and reactive action buttons ("Active Plan", "Upgrade to...", "Downgrade to Free").
       - Manage Subscription & Payment Methods section with Payment Details dialog (UPI, Cards, NetBanking), Cancel Confirmation modal, and live Payment History table with status badges.
       - Dynamic plan badge display across Dashboard Header and Sidebar.
-
-
+  - **Session 2026-09-08 (Repository & Documentation)**:
+    - Crafted comprehensive, professional `README.md` with features breakdown, architecture diagram, security guarantees, setup instructions, and tech stack badges.
+    - Verified strict exclusion of all secret files (`.env`, `.env.local`, API keys) in `.gitignore`.
+    - Created `.env.example` template with clear placeholders for InsForge, YouCam AI, and Razorpay credentials.
+    - Added `scratch/` to `.gitignore` to prevent temporary scripts from being tracked.
+    - Staged all application code, components, migrations, assets, and committed to local `main` branch: `feat: complete Pixora AI photo studio with Next.js, InsForge BaaS, Beauty Studio & Razorpay billing`.
+    - Set up remote: `origin -> https://github.com/DarkModeTony/Pixora.git`.
